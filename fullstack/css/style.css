@@ -1,0 +1,304 @@
+/* Переменные */
+:root {
+	--color-white: #ffff;
+	--background-black-opacity: rgb(0, 0, 0, 50%);
+	--color-text: #262626;
+}
+
+
+/* Общие стили */
+
+a {
+	color: var(--color-white);
+	text-decoration: none;
+	transition: opacity .25s ease ;
+
+}
+
+a:hover {
+	opacity: .7;
+}
+
+/* header стили */
+
+.header {
+    position: relative;
+	height: 100vh;	
+	
+	
+}
+
+.header__backgorund {
+	position: absolute;
+	height: inherit;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(100%);
+	filter: grayscale(10%);
+}
+
+.header__backgorund-wrapper {
+	position: absolute;
+	height: inherit;
+	width: 100%;
+
+	background: rgb((190, 194, 190), rgb(190, 194, 190), rgb(255, 255, 255));
+	z-index: 1;
+}
+
+.header-top {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+
+	height: 80px;
+	color: white;
+	background: var(--background-black-opacity);
+	z-index: 2;
+}
+
+.header-top a {
+	color:  #262626;
+}
+
+.header-top a.active {
+	color: var(--color-white);
+
+}
+
+.logo {
+	font-size: 30px;
+	
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-element {
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+.menu-element:last-child {
+	margin-right: 0px;
+}
+
+.switcher {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 35px;
+	padding: 0 10px;
+	width: 90px;
+
+	background: var(--background-black-opacity);
+	border-radius: 20px;
+	opacity: .9;
+
+	transition: opacity .25s ease; 
+	cursor: pointer;
+
+}
+.switcher:hover {
+	opacity: 1;
+}
+
+.switcher:before {
+	content: "";
+	width: 40px;
+	height: 30px;
+	background: #8a8585;
+	position: absolute;
+	left: 42px;
+	z-index: 1;
+	border-radius: 20px;
+	transition: left .25s ease-in-out; 
+
+
+
+}
+
+#lang:checked + .switcher:before {
+	left: 7px;
+}
+
+#lang:checked + .switcher span:first-child {
+	color: var(--background-black-opacity);
+}
+
+#lang:checked + .switcher span:last-child {
+	color: var(--color-white);
+}
+
+
+.switcher span {
+	flex: 1 1 50%;
+	text-align: center;
+	z-index: 2;
+	color: var(--background-black-opacity);
+}
+
+#lang {
+	display: none;
+}
+
+
+.header-center {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 80px);
+
+	color: #262626;
+	z-index: 2;
+	
+}
+
+.header-center__wrapper {
+	width: 100%;
+	background: var(--background-black-opacity);
+	text-align: center;
+	padding: 10px 0 20px 5px;
+	
+}
+
+.name {
+	font-size: 58px;
+	line-height: 74px;
+}
+
+.description {
+	display: inline-block;
+	width: 78ch;
+	font-family: Courier, monospace;
+	font-size: 22px;
+	line-height: 1.5en;
+	white-space: nowrap;
+
+	border-right: 3px solid transparent;
+
+	overflow: hidden;
+
+	animation: cursos 0.75s 8, print-text 5s steps(68);
+}
+
+@keyframes cursos {
+	0% {
+		border-color: transparent;
+	}
+
+	50% {
+		border-color: #ffff;
+	}
+
+	100% {
+		border-color: transparent;
+	}
+}
+
+@keyframes print-text {
+	from {
+		width: 0;
+
+	}
+}
+
+/* о нас */
+
+.about-us {
+	display: flex;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background: url(/images/white-painted-wall-texture-background_53876-138197.png)
+}
+
+.about-us .left {
+	flex: 1 1 40%;
+}
+
+.about-us .right {
+	flex: 1 1 60%;
+}
+
+.about-us__image {
+	width: 500px;
+	margin-left: 150px;
+	border-radius: 10px;
+	filter: drop-shadow(10px 10px 10px var(--background-black-opacity)) brightness(3);
+}
+
+.about-us__tittle {
+	font-size: 36px;
+}
+
+.about-us__description {
+	font-size: 20px;
+	color: var(--color-text);
+	margin-bottom: 15px;
+	
+}
+
+.Accesories {
+	padding: 40px 20px;
+
+}
+
+.Accesories-list__element1 {
+	display: flex;
+	width: 400px;
+	font-size: 25px;
+	margin-bottom: center;
+}
+
+
+.Accesories-list__element2 {
+	display: flex;
+	width: 400px;
+	font-size: 25px;
+	margin-bottom: center;
+}
+
+
+
+.Accesories-list__element3 {
+	display: flex;
+	width: 400px;
+	font-size: 25px;
+	margin-bottom: center;
+}
+
+.second-tittle {
+	position: relative;
+	font-size: 32px;
+	text-align: center;
+	margin-bottom: 2px;
+}
+
+.second-tittle:after {
+	--underline-width: 60px;
+
+	content: "";
+
+	display: inline-block;
+	width: var(--underline-width);
+	height: 2px;
+
+	position: absolute;
+	bottom: -7px;
+	left: calc(50% - var(--underline-width) / 2);
+
+	background: var(--background-black-opacity);
+	
+
+}
+
+
+	
+
