@@ -213,10 +213,12 @@ a:hover {
 
 .about-us {
 	display: flex;
+	background-image: url(/images/white-painted-wall-texture-background_53876-138197.png);
 	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background: url(/images/white-painted-wall-texture-background_53876-138197.png)
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	position: relative;
+
 }
 
 .about-us .left {
@@ -247,12 +249,18 @@ a:hover {
 
 .Accesories {
 	padding: 40px 20px;
-
+	background-image: url(/images/white-painted-wall-texture-background_53876-138197.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	position: relative;
 }
+
+
 
 .Accesories-list__element1 {
 	display: flex;
-	width: 350px;
+	width: 250px;
 	font-size: 25px;
     cursor: pointer;
     font-weight: bold;
@@ -265,9 +273,10 @@ a:hover {
 }
 
 
+
 .Accesories-list__element2 {
 	display: flex;
-	width: 350px;
+	width: 250px;
 	font-size: 25px;
     cursor: pointer;
     font-weight: bold;
@@ -282,7 +291,7 @@ a:hover {
 
 .Accesories-list__element3 {
 	display: flex;
-	width: 350px;
+	width: 250px;
 	font-size: 25px;
     cursor: pointer;
     font-weight: bold;
@@ -292,6 +301,98 @@ a:hover {
     justify-content: space-between;
     align-items: center;
 }
+
+.Accesories-list__element4 {
+	display: flex;
+	width: 250px;
+	font-size: 25px;
+    cursor: pointer;
+    font-weight: bold;
+	flex-wrap: nowrap;
+	white-space: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Accesories-list__element5 {
+	display: flex;
+	width: 250px;
+	font-size: 25px;
+    cursor: pointer;
+    font-weight: bold;
+	flex-wrap: nowrap;
+	white-space: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sweatshirts {
+	padding: 40px 20px;
+	background-image: url(/images/white-painted-wall-texture-background_53876-138197.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	position: relative;
+}
+
+.t-shirts {
+	padding: 40px 20px;
+	background-image: url(/images/white-painted-wall-texture-background_53876-138197.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	position: relative;
+}
+
+.jackets {
+	padding: 40px 20px;
+	background-image: url(/images/white-painted-wall-texture-background_53876-138197.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	position: relative;
+}
+
+.jeans {
+	padding: 40px 20px;
+	background-image: url(/images/white-painted-wall-texture-background_53876-138197.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	position: relative;
+}
+
+.contact-me {
+	padding: 40px 20px;
+	background-image: url(/images/white-painted-wall-texture-background_53876-138197.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	position: relative;
+}
+
+.socials {
+	padding: 40px 20px;
+	background-image: url(/images/white-painted-wall-texture-background_53876-138197.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	position: relative;
+}
+
+.footer-about {
+	padding: 40px 20px;
+	background-image: url(/images/white-painted-wall-texture-background_53876-138197.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	position: relative;
+}
+
+
+
 .second-tittle {
 	position: relative;
 	font-size: 32px;
@@ -317,6 +418,7 @@ a:hover {
 
 }
 
-
-	
-
+@media (max-width: 768px) {
+	/* Стили для мобильных устройств */
+  }
+  
